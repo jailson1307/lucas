@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="theme-color" content="#f7f4ef">
+
+  <!-- Título que aparece na aba e no compartilhamento -->
+  <title>Sua marca</title>
+  <meta name="description" content="Links, cardápio e redes sociais.">
+
+  <!-- Compartilhamento no WhatsApp e em outras redes -->
+  <meta property="og:title" content="Sua marca">
+  <meta property="og:description" content="Links, cardápio e redes sociais.">
+  <!-- Troque pelo endereço completo da capa ao publicar, por exemplo https://seusite.com/img/capa.jpg -->
+  <meta property="og:image" content="img/capa.jpg">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="page">
+
+    <!-- FOTO DE CAPA -->
+    <header class="cover">
+      <div class="capa">
+      <img src="img/capa.jpg" alt="Capa" fetchpriority="high">
+      <button type="button" class="share" data-share>Compartilhar</button>
+    </div>
+    </header>
+
+    <section class="cards">
+
+      <!-- CARDÁPIO -->
+      <div class="menu-block">
+        <button type="button" class="card" data-menu aria-expanded="false" aria-controls="cardapio-panel">
+          <img src="img/card-cardapio.jpg" alt="Cardápio">
+        </button>
+
+        <div class="menu" id="cardapio-panel" hidden>
+          <!-- PRATOS EM DESTAQUE -->
+          <div class="menu-featured">
+            <div class="destaques">
+              <h2>Pizza de destaques</h2>
+              <img src="img/prato-1.jpg" alt="Prato em destaque 1">
+              <img src="img/prato-2.jpg" alt="Prato em destaque 2">
+              <img src="img/prato-3.jpg" alt="Prato em destaque 3">
+              <img src="img/prato-4.jpg" alt="Prato em destaque 4">
+              </div>
+          </div>
+
+          <!-- FILEIRA 1 -->
+          <div class="menu-row">
+            <img src="img/menu-1.jpg" alt="Card 1">
+            <img src="img/menu-2.jpg" alt="Card 2">
+          </div>
+
+          <!-- FILEIRA 2 -->
+          <div class="menu-row">
+            <img src="img/menu-3.jpg" alt="Card 3">
+            <img src="img/menu-4.jpg" alt="Card 4">
+          </div>
+        </div>
+      </div>
+
+      <!-- AVALIAÇÃO -->
+      <!-- Troque o link abaixo pelo endereço de avaliação do Google -->
+      <a class="card" href="https://search.google.com/local/writereview?placeid=ChIJwzFcEwOapgAR7Z3YvGwnCrg" target="_blank" rel="noopener noreferrer">
+        <img src="img/card-avaliacao.jpg" alt="Avaliação" loading="lazy">
+      </a>
+
+      <!-- QUEM SOMOS -->
+      <a class="card" href="quem-somos.html">
+        <img src="img/card-quem-somos.jpg" alt="Quem somos" loading="lazy">
+      </a>
+
+    </section>
+
+    <h2 class="social-title">Nossas redes sociais</h2>
+
+    <section class="cards">
+
+      <!-- WHATSAPP -->
+      <!-- Número com DDI e DDD, sem espaços: 5511999999999 -->
+      <!-- Mensagem: troque o texto depois de text= (espaço = %20) -->
+      <a class="card" href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Vim%20pelo%20link%20da%20bio." target="_blank" rel="noopener noreferrer">
+        <img src="img/card-whatsapp.jpg" alt="WhatsApp" loading="lazy">
+      </a>
+
+      <!-- INSTAGRAM -->
+      <!-- Troque pelo perfil: https://instagram.com/seuperfil -->
+      <a class="card" href="https://www.instagram.com/pizzaria.dany/" target="_blank" rel="noopener noreferrer">
+        <img src="img/card-instagram.jpg" alt="Instagram" loading="lazy">
+      </a>
+
+      <!-- FACEBOOK -->
+      <!-- Troque pela página: https://facebook.com/suapagina -->
+      <a class="card" href="https://www.facebook.com/profile.php?id=100069422540199" target="_blank" rel="noopener noreferrer">
+        <img src="img/card-facebook.jpg" alt="Facebook" loading="lazy">
+      </a>
+
+    </section>
+
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
